@@ -1,0 +1,193 @@
+/* Keep previous styles from the first example and add/modify these */
+
+.App {
+  font-family: sans-serif;
+  max-width: 700px; /* Slightly wider */
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* --- Add Task Form --- */
+.add-task-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  border: 1px solid #eee;
+}
+
+.add-task-form .form-control {
+  margin-bottom: 15px;
+}
+
+.add-task-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.add-task-form input[type="text"],
+.add-task-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width */
+  font-size: 1rem;
+}
+
+.add-task-form button {
+  display: block; /* Make button full width */
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease;
+}
+
+.add-task-form button:hover {
+  background-color: #4cae4c;
+}
+
+
+/* --- Task List --- */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Task Item --- */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.task-item:hover {
+    background-color: #f9f9f9;
+}
+
+.task-item.completed {
+    background-color: #f0f0f0; /* Slightly grey out completed tasks */
+}
+
+.task-item.completed .task-title,
+.task-item.completed .task-description,
+.task-item.completed .task-priority {
+  color: #888;
+}
+
+.task-details {
+    flex-grow: 1;
+    margin-right: 15px; /* Space between details and actions */
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px; /* Space between title and description */
+  display: block; /* Ensure it takes full width */
+  cursor: pointer;
+}
+
+.task-description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 8px;
+    word-break: break-word; /* Prevent long descriptions from breaking layout */
+}
+
+.task-priority {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #777;
+    display: block; /* Put priority on its own line */
+}
+
+/* --- Priority Styling (Optional) --- */
+.task-item.priority-high { border-left: 5px solid #d9534f; }
+.task-item.priority-medium { border-left: 5px solid #f0ad4e; }
+.task-item.priority-low { border-left: 5px solid #5bc0de; }
+
+.task-actions {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 5px; /* Space between buttons */
+    align-items: flex-end; /* Align buttons to the right */
+    flex-shrink: 0; /* Prevent actions area from shrinking */
+}
+
+.task-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-width: 80px; /* Give buttons a minimum width */
+  text-align: center;
+}
+
+.toggle-button {
+    background-color: #5bc0de;
+    color: white;
+}
+.toggle-button:hover {
+    background-color: #31b0d5;
+}
+
+.task-item.completed .toggle-button {
+    background-color: #f0ad4e; /* Orange for Undo */
+}
+.task-item.completed .toggle-button:hover {
+    background-color: #ec971f;
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+/* --- Error Message --- */
+.error {
+  color: #d9534f;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* --- Loading Message --- */
+.App > p { /* Target the loading message directly */
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 20px;
+}
