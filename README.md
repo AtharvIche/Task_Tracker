@@ -10,9 +10,10 @@ This is a full-stack task tracker built with:
 - RESTful API for task operations
 - Responsive UI with filtering options
 
-## Running Locally
+ScreenShot
+<img width="1920" height="1080" alt="Screenshot 2025-07-22 162705" src="https://github.com/user-attachments/assets/924e05e2-cf3c-4491-a044-3165b7bccda1" />
 
-### Backend
-```bash
-cd backend
-./mvnw spring-boot:run
+🤝 Contributors
+Atharv Iche [GitHub]github.com/AtharvIche
+
+
