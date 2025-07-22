@@ -13,7 +13,7 @@ This is a full-stack task tracker built with:
 ScreenShot
 <img width="1920" height="1080" alt="Screenshot 2025-07-22 162705" src="https://github.com/user-attachments/assets/924e05e2-cf3c-4491-a044-3165b7bccda1" />
 
-🤝 Contributors
-Atharv Iche [GitHub]github.com/AtharvIche
+🤝 Contributor
+-Atharv Iche
 
 
